@@ -47,7 +47,19 @@ function torol(){
     Vezeteknev.value = '';
     Keresztnev.value = '';
     Telefonszam.value = '';
+}
+function modosit(){
+    const editButton = document.createElement('button');
+    editButton.textContent = 'Edit';
+    editButton.classList.add('edit-button');
 
+    editButton.addEventListener('click',function(){
+        row.classList.toggle('edit-mode');
+
+        if(row.classList.contains('edit-mode')){
+            editButton.textContent = 'Save';
+        }
+    });
     
 
-}
+};
