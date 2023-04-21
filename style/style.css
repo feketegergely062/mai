@@ -10,7 +10,7 @@ th, td{
 }
 
 th{
-    background-color: #ccc;
+    background-color: #eee;
 }
 
 form{
@@ -23,4 +23,11 @@ form input{
 
 form button{
     margin-top: 10px;
+}
+form delete button{
+    background-color: red;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
 }
